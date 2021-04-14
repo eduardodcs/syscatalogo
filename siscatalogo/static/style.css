@@ -1,0 +1,86 @@
+header{
+    width: 100%;
+
+}
+
+body{
+    background:linear-gradient(90deg,#f4f9f9,#FBD9CF);
+    background-size: 600%, 600%;
+    animation: colors 5s ease infinite;
+}
+
+a:hover{
+color: black;
+}
+
+.qs{
+    margin-left: 0.5em;
+}
+
+.c{
+    margin-left: 2em;
+}
+
+.whatsapp-link{
+    margin-left: 3em;
+    line-height: 1.5;
+}
+
+.logo{
+    position: relative;
+    left: 40%;
+    width: 20%;
+    min-width: 150px;
+}
+
+.opcoes{
+    padding-bottom: 30px;
+}
+
+.tabela{
+    text-align: center;
+}
+
+
+.tabela li{
+    display: inline;
+    padding: 8px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: dimgray;
+}
+
+ .info ul{
+    float: right;
+    line-height: 25px;
+    margin-right: 10mm;
+}
+
+main, section, #img1, #img2, #img3{
+    height: 300px;
+    width: 300px;
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+ .texto{
+    margin-left:  20em;
+}
+
+@keyframes colors{
+
+    0%{
+        background-position: 0% 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}

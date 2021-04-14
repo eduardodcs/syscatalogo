@@ -1,0 +1,13 @@
+{% include 'partials/_links.html' %}
+
+<h1>LOGIN</h1>
+
+<form action="{% url 'login' %}" method="POST">
+    {% csrf_token %}
+    <label for="usuario">Usuario</label>
+    <input type="text" id="usuario" name="usuario">
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" name="senha">
+    <button type="submit">Acessar</button>
+</form>
+

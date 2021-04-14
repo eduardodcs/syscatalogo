@@ -1,0 +1,11 @@
+{% include 'partials/_links.html' %}
+<h1>DASHBOARD</h1>
+
+{% if user.is_authenticated %}
+<h2>Olá {{ user.username }}</h2>
+
+{% else %}
+
+<h2>Não está logado</h2>
+
+{% endif %}

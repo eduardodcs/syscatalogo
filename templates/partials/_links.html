@@ -1,0 +1,11 @@
+<a href="{% url 'index' %}">Página Index</a><br>
+<a href="{% url 'cadastro_usuario' %}">Cadastro Usuário</a><br>
+<a href="{% url 'login' %}">Login</a><br>
+<a href="{% url 'dashboard' %}">Dashboard</a><br>
+
+{% for usuario in usuarios %}
+
+<a href="{% url 'catalogo' usuario %}">Catalogo {{ usuario }}</a><br>
+
+{% endfor %}
+

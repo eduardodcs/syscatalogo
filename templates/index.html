@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitória Semi Joias</title>
+    <link rel="stylesheet" href="{% static 'reset.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<body>
+    <header>
+        {% include 'partials/_links.html' %}
+        <nav class="info">
+            <ul>
+                <li><a class="qs" href="quemsomos.html">Quem somos ?</a></li>
+                <li class="c"><a href="contatos.html">Contatos</a></li>
+                <li><a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </nav>
+        <img class="logo" src="{% static 'logo-vitoria-removebg-preview.png' %}">
+        <div class="opcoes">
+            <nav class="tabela">
+                <ul>
+                    <li><a href="aneis.html">Aneis</a></li>
+                    <li><a href="brincos.html">Brincos</a></li>
+                    <li><a href="correntes.html">Correntes</a></li>
+                    <li><a href="pulseiras.html">Pulseiras</a></li>
+                    <li><a href="conjuntos.html">Conjuntos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            
+                <img id="img1" src="{% static 'pexel1.jpg' %}">
+                <div class="texto1">
+                    <p>O que é Lorem Ipsum?
+                        Lorem Ipsum é simplesmente uma simulação de texto da 
+                        indústria tipográfica e de impressos,
+                        e vem sendo utilizado desde o século XVI, quando um impressor 
+                        desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos
+                    </p>
+                </div>
+                <img id="img2" src="{% static 'pexel2.jpg' %}">
+                <div class="texto2">
+                    <p>O que é Lorem Ipsum?
+                        Lorem Ipsum é simplesmente uma simulação de texto da 
+                        indústria tipográfica e de impressos,
+                        e vem sendo utilizado desde o século XVI, quando um impressor 
+                        desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos
+                    </p>
+                </div>
+                <img id="img3" src="{% static 'pexel3.jpg' %}">
+                <div class="texto3">
+                    <p>O que é Lorem Ipsum?
+                        Lorem Ipsum é simplesmente uma simulação de texto da 
+                        indústria tipográfica e de impressos,
+                        e vem sendo utilizado desde o século XVI, quando um impressor 
+                        desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos
+                    </p>
+                </div>
+           
+           
+        </section>
+    </main>
+</body>
+</html>
+
+
+<h1>INDEX</h1>
+
+{% if produtos %}
+{% for produto in produtos %}
+<h2>{{ produto.nome_produto }}</h2>
+{% endfor %}
+{% endif %}

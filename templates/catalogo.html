@@ -1,0 +1,8 @@
+{% include 'partials/_links.html' %}
+<h1>CATALOGO</h1>
+
+{% for itens in dados.produtos_vendedor.all %}
+
+<p> {{ itens.nome_produto }} </p>
+
+{% endfor %}
